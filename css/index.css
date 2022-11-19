@@ -92,6 +92,7 @@ section:not(#home){
 .content {
   background-color: rgba(var(--clr-primary), .65);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 5px;
   padding: 5rem;
 }
