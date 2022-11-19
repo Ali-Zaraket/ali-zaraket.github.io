@@ -16,7 +16,7 @@
   overflow-y: hidden;
   opacity: 0;
   transform: translateY(-100%);
-  background-color: rgba(var(--clr-accent), .65);
+  background-color: rgba(var(--clr-accent), .9);
   backdrop-filter: blur(12px);
   position: fixed;
   top: 0;
