@@ -20,3 +20,12 @@ progress_elements.forEach(elt => {
 function delay (URL) {
   setTimeout( function() { window.location = URL }, 500 );
 }
+
+document.addEventListener('scroll', (e) => {
+  const content = document.querySelector('.content')
+  if(window.scrollY > content.offsetTop) {
+    document.querySelector('header').setAttribute('data-fixed', "true")
+  } else {
+    document.querySelector('header').setAttribute('data-fixed', "false")
+  }
+})
