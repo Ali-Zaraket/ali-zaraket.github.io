@@ -7,7 +7,7 @@ section#home {
   height: calc(100vh - 80px);
 }
 
-section:not(#home){
+section:not(#home) {
   margin-bottom: 10rem;
 }
 
@@ -30,7 +30,7 @@ section:not(#home){
   z-index: -1;
 }
 
-.background-image > div {
+.background-image>div {
   width: 100%;
   height: 100%;
   background-color: black;
@@ -50,7 +50,7 @@ section:not(#home){
   gap: .5rem;
 }
 
-.name > h1 {
+.name>h1 {
   animation-name: appear-from-left;
   animation-duration: 800ms;
   animation-delay: 0;
@@ -58,10 +58,10 @@ section:not(#home){
   animation-direction: forwards;
 }
 
-.name > .cursor {
+.name>.cursor {
   background-color: rgb(var(--clr-accent));
   pointer-events: none;
-  width: 2px; 
+  width: 2px;
   height: 30px;
 }
 
@@ -79,7 +79,7 @@ section:not(#home){
   margin-bottom: 2rem;
 }
 
-.description > p {
+.description>p {
   color: rgba(var(--clr-primary), .8);
   margin: .5rem;
   max-width: 50%;
@@ -150,11 +150,11 @@ section:not(#home){
   margin-block: .2rem;
 }
 
-.experience-header > legend {
+.experience-header>legend {
   color: rgb(var(--clr-secondary));
 }
 
-.experience-header > .date {
+.experience-header>.date {
   color: rgba(var(--clr-secondary), .6);
 }
 
@@ -175,31 +175,35 @@ section:not(#home){
   margin-block: 1.8em;
 }
 
-.contact-card:hover > p{
+.contact-card:hover>p {
   text-decoration: underline;
 }
 
-.contact-card > img {
+.contact-card>img {
   width: 20px;
   aspect-ratio: 1;
 }
 
-@media (max-width: 650px){
+@media (max-width: 650px) {
   .intro {
     text-align: center;
     padding-top: 12rem;
   }
+
   .name {
     justify-content: center;
   }
+
   .name::before {
     opacity: 0;
   }
-  .description > p {
+
+  .description>p {
     max-width: 80%;
     margin: 0 auto;
     text-align: center;
   }
+
   .content {
     padding: 2rem;
   }
@@ -211,9 +215,11 @@ section:not(#home){
     align-items: flex-start;
     gap: 1rem;
   }
+
   .content {
     padding: 1rem;
   }
+
   .intro {
     padding-top: 8rem;
   }
